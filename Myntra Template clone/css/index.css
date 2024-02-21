@@ -207,6 +207,7 @@ header {
   padding: 30px 0px 40px 0px;
   background: #fafbfc;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -326,4 +327,70 @@ header {
 }
 a.action_container:link {
   color: black;
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 480px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav_bar {
+    min-width: unset;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: center;
+  }
+
+  .search_bar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search_input {
+    width: calc(100% - 40px);
+  }
+
+  .category_heading {
+    font-size: 1.2em;
+    margin: 20px 0 10px 10px;
+  }
+
+  .sale_item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer_column {
+    flex-basis: 50%; /* Display two columns per row */
+    padding: 0 10px; /* Add horizontal padding */
+  }
+
+  .items-container {
+    padding: 0 5px; /* Adjust padding */
+  }
+
+  .item-container {
+    max-width: 45%; /* Adjust maximum width */
+  }
+
+  .company-name,
+  .item-name,
+  .price,
+  .current-price,
+  .original-price,
+  .discount {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .btn-add-bag {
+    font-size: 16px; /* Adjust font size */
+  }
 }

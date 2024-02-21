@@ -134,3 +134,40 @@
   height: 14px;
   cursor: pointer;
 }
+/*Code for small devices*/
+@media only screen and (max-width: 480px) {
+  .bag-items-container {
+    width: 100%;
+    padding: 0 16px;
+    border: none;
+  }
+
+  .bag-summary {
+    width: 100%;
+    padding: 24px 16px 0;
+  }
+
+  .bag-page {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Media Query for tablets */
+@media only screen and (max-width: 1024px) {
+  .bag-items-container {
+    width: 100%;
+    padding: 0 16px;
+    border: none;
+  }
+
+  .bag-summary {
+    width: 100%;
+    padding: 24px 16px 0;
+  }
+
+  .bag-page {
+    width: 100%;
+    margin-left: 0;
+  }
+}
